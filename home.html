@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Images/Icon.jpg">
+    <title>Valentine?</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Set the background color of the body */
+        }
+
+        .neon-box {
+            position: relative; /* Add position relative to make absolute positioning work */
+            width: 200px;
+            height: 200px;
+            background-color: #03ff29; /* Neon green color */
+            border-radius: 10px; /* Optional: Add rounded corners */
+            box-shadow: 0 0 20px 5px #03ff29; /* Optional: Add a neon glow effect */
+        }
+
+        .black-box {
+            position: absolute; /* Position the black-box relative to the neon-box */
+            top: 7.5px; /* Adjust the top position */
+            left: 7.5px; /* Adjust the left position */
+            width: 185px;
+            height: 185px;
+            background-color: #000000; /* Black color */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+
+        .cat-images {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            background-image: url('Images/begmain.jpg'); /* Adjust the file extension accordingly */
+            background-size: cover; /* or "contain" depending on your preference */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-box">
+        <div class="black-box"></div>
+            <div class="cat-images"></div>
+        </div>
+    </div>
+</body>
+</html>
